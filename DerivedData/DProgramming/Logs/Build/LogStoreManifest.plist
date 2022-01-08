@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>5CCE4BA4-5B99-4B54-9578-671C832B3B3A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>5CCE4BA4-5B99-4B54-9578-671C832B3B3A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>DProgramming project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>DProgramming</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build DProgramming</string>
+			<key>timeStartedRecording</key>
+			<real>663352340.53950906</real>
+			<key>timeStoppedRecording</key>
+			<real>663352357.35550499</real>
+			<key>title</key>
+			<string>Build DProgramming</string>
+			<key>uniqueIdentifier</key>
+			<string>5CCE4BA4-5B99-4B54-9578-671C832B3B3A</string>
+		</dict>
+		<key>FCB57D79-1D17-49E5-ACC0-29EEDE5CD2F1</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>FCB57D79-1D17-49E5-ACC0-29EEDE5CD2F1.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>DProgramming project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>DProgramming</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build DProgramming</string>
+			<key>timeStartedRecording</key>
+			<real>663352340.38916194</real>
+			<key>timeStoppedRecording</key>
+			<real>663352340.537606</real>
+			<key>title</key>
+			<string>Build DProgramming</string>
+			<key>uniqueIdentifier</key>
+			<string>FCB57D79-1D17-49E5-ACC0-29EEDE5CD2F1</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

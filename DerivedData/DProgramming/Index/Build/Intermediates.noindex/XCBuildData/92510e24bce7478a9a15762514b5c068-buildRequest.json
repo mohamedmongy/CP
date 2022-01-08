@@ -1,0 +1,60 @@
+{
+  "_buildCommand2" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : true,
+    "targets" : null
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "e8aac6b51177592a2f139a2f36e9132236810cb524023099cfd715631994fe26"
+    }
+  ],
+  "containerPath" : "/Users/mongy/Desktop/comp.prog/DProgramming.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "indexbuild",
+    "activeArchitecture" : "x86_64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx12.0",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "x86_64h",
+        "x86_64"
+      ],
+      "targetArchitecture" : "x86_64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/mongy/Desktop/comp.prog/DerivedData/DProgramming/Index/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/mongy/Desktop/comp.prog/DerivedData/DProgramming/Index/Build/Products",
+      "derivedDataPath" : "/Users/mongy/Desktop/comp.prog/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/mongy/Desktop/comp.prog/DerivedData/DProgramming/Index/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/mongy/Desktop/comp.prog/DerivedData/DProgramming/Index/PrecompiledHeaders",
+      "pchPath" : "/Users/mongy/Desktop/comp.prog/DerivedData/DProgramming/Index/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "INDEX_ARENA_INFO_REGULAR_BUILD_PRODUCTS_DIR" : "/Users/mongy/Desktop/comp.prog/DerivedData/DProgramming/Build/Products",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}
