@@ -20,7 +20,7 @@ class Solution {
         input.append(candidates[idx])
         dfs(input: &input, idx: idx, output: &output, total:  total + candidates[idx], target: target)
         
-        // don't take the element
+        // don't take the element - back track 
         input.removeLast()
         dfs(input: &input, idx: idx+1, output: &output, total: total, target: target)
         
