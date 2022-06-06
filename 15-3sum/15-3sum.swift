@@ -4,8 +4,7 @@ class Solution {
         var res: [ [ Int] ] = []
         var  nums = nums
         nums.sort()
-        var s = 0 
-        var e = 0 
+        
         
         for c in 0..<nums.count {
             
