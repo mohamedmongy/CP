@@ -8,7 +8,11 @@ class Solution:
             if i == len(word):
                 return True 
             
-            if (r < 0 or c < 0 or r >= rows or c >= cols or board[r][c] != word[i] or (r, c) in path):
+            if (r < 0 or c < 0 or
+                r >= rows or 
+                c >= cols or 
+                board[r][c] != word[i] 
+                or (r, c) in path):
                 return False
                 
             path.add((r,c))
