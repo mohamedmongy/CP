@@ -7,14 +7,17 @@
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
         
-        visited = set() 
+        f = head 
+        s = head 
         
-        while head:
-            if head in visited:
+        while f and f.next:
+            s = s.next 
+            f = f.next.next 
+            
+            if s == f: 
                 return True  
+        
+        return False 
             
-            visited.add(head)
-            head = head.next 
-            
-        return False      
+        
             
