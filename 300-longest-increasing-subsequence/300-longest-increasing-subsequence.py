@@ -8,8 +8,7 @@ class Solution:
                 # 9j 3j ... 7i
                 if nums[i] > nums[j]:
                     dp[i]  = max(dp[i], dp[j]+1)
-                else:
-                    continue 
+                    
         return max(dp)        
                 
         
