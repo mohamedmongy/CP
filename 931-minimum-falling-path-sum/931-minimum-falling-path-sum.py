@@ -3,7 +3,7 @@ class Solution:
         rows = len(matrix)
         cols = len(matrix[0])
         
-        dp = [  [ -1 for c in range(cols)] for r in range(rows)]
+        dp = [[ -1 for c in range(cols)] for r in range(rows)]
         
         mini = float('inf')
             
