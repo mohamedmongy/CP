@@ -22,12 +22,12 @@ class Solution:
             
             maxi = float('-inf')
             
-            for curc1 in range(-1,2):
-                for curc2 in range(-1,2):
+            for r1move in range(-1,2):
+                for r2move in range(-1,2):
                     if c1 == c2: 
-                        maxi = max(maxi,  grid[r][c1] + f(r+1, c1+curc1, c2+curc2))
+                        maxi = max(maxi,  grid[r][c1] + f(r+1, c1+r1move, c2+r2move))
                     else:
-                        maxi = max(maxi, grid[r][c1] + grid[r][c2] + f(r+1, c1+curc1, c2+curc2))
+                        maxi = max(maxi, grid[r][c1] + grid[r][c2] + f(r+1, c1+r1move, c2+r2move))
                         
             dp[r][c1][c2] = maxi            
             return dp[r][c1][c2]         
