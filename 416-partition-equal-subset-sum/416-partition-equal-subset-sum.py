@@ -6,7 +6,7 @@ class Solution:
         n = len(nums)
         target = total // 2
         
-        if mod > 0:
+        if mod:
             return False
         
         dp = [  [ -1 for t in range(target+1) ] for r in range(n) ] 
@@ -24,6 +24,7 @@ class Solution:
             take = False 
             if target > nums[idx]:
                 take = f(idx-1, target-nums[idx])
+                
             nottake =  f(idx-1, target)
             dp[idx][target] = take or nottake 
             
