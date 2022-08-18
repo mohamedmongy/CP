@@ -1,15 +1,32 @@
 class Solution:
     def coinChange(self, coins: List[int], amount: int) -> int:
-        dp = [amount+1]*(amount+1)
-        dp[0] = 0 
+        n = len(coins)
+        dp = [ [ -1 for c in range(amount+1) ] for r in range(n)]
+        maxi = float('inf')
         
-        for c in coins:
-            for a in range(c,len(dp)):
-                dp[a] = min(dp[a], dp[a-c]+1)
-                
-                
-        return dp[amount] if dp[amount] <= amount else -1
+        def f(idx, t):
+            if t == 0: 
+                return 0 
             
+            if idx < 0:
+                return maxi
+            
+            if dp[idx][t] != -1:
+                return dp[idx][t]
+            
+            nottake = f(idx-1, t)
+            
+            take = maxi
+            if t >= coins[idx]:
+                take = 1 + f(idx, t-coins[idx])
+            
+            dp[idx][t] = min(take, nottake)
+            return dp[idx][t]
         
+        res = f(n-1, amount)
+        
+        if res != maxi:
+            return res
+        return -1
    
         
