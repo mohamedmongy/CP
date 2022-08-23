@@ -4,7 +4,7 @@ class Solution:
         n1 = len(text1)
         n2 = len(text2)
 
-        dp = [ [-1 for c in range(n2+1) ]  for r in range(n1+1) ]
+        dp = [ [-1 for c in range(n2) ]  for r in range(n1) ]
         
         def f(idx1, idx2):
             
