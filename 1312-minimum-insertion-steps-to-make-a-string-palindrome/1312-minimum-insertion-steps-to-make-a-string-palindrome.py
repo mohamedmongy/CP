@@ -21,7 +21,7 @@ class Solution:
                 dp[idx1][idx2] = 1 + f(idx1-1, idx2-1)
                 return dp[idx1][idx2]
             
-            dp[idx1][idx2] = 0 + max(f(idx1-1, idx2), f(idx1, idx2-1))
+            dp[idx1][idx2] =  max(f(idx1-1, idx2), f(idx1, idx2-1))
             return dp[idx1][idx2]
         
         return n1 - f(n1-1, n2-1)
