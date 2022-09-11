@@ -3,10 +3,9 @@ class Solution:
         slen = len(s)
         plen = len(p)
         
-        dp = [ [ -1 for c in range(plen)] for i in range(slen)]
+        dp = [ [ -1 for c in range(plen) ] for i in range(slen)]
         
         def f(i, j):
-            
             if i< 0 and j < 0:
                 return True
             
@@ -30,7 +29,8 @@ class Solution:
                 dp[i][j] = f(i, j-1) or f(i-1, j)
                 return dp[i][j]
             
-            return False 
+            dp[i][j] = False
+            return  dp[i][j]
         
         return f(slen-1, plen-1)
             
