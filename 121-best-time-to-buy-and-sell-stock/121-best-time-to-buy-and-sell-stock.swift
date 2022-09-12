@@ -2,7 +2,6 @@ class Solution {
     func maxProfit(_ prices: [Int]) -> Int {
      
         let count  = prices.count
-        //var lidx = 0
         var profit = 0
 
         var mini = prices[0]
@@ -12,7 +11,6 @@ class Solution {
             profit = max(profit, cost)
             mini =  min(prices[i], mini)
         }
-    
 
         return profit
     }
