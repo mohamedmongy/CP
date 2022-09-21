@@ -18,7 +18,6 @@ class Solution:
                     previdx[cidx] = pidx
                     
             if dp[cidx] > lis:
-                lis = dp[cidx]
                 lastidx = cidx 
                 
             lis = max(lis, dp[cidx])  
