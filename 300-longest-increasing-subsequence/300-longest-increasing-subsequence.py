@@ -22,9 +22,8 @@ class Solution:
                         res[cidx] = pidx
                 
                 if dp[cidx] > lis:
-                    lis = dp[cidx]
+                    #lis = dp[cidx]
                     lastidx = cidx
-                    
                     
                 lis = max(lis, dp[cidx])  
                 
@@ -33,10 +32,7 @@ class Solution:
                 while lastidx != res[lastidx]:
                     temp.append(nums[lastidx])
                     lastidx = res[lastidx]
-                    
-                    
-                temp[::-1]
-                
+                                    
             return lis                   
        
         def f(cidx, pidx):
