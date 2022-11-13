@@ -1,26 +1,22 @@
 class Solution:
 	def isBipartite(self, V, adj):
-		#code here
-		
 		colors = [ -1 for c in range(V) ]
 		
 		def dfs(curr, col): 
             colors[curr] = col 
-            
+            res = True
             for nbr in adj[curr]: 
                 if colors[nbr] == -1: 
-                    if dfs(nbr, not col) == False:
-                        return False
+                    res = res and dfs(nbr, not col)
                 elif colors[nbr] == col:
-                    return False
-                    
-            return True
-            
+                    res =  res and False
+            return res
+        
+        res = True
 		for i in range(V):
 		    if colors[i] == -1:
-		        if dfs(i, 0) == False: 
-		            return False
-        return True 
+		        res = res and dfs(i, 0)
+        return res 
         
         
             
