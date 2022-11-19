@@ -1,22 +1,48 @@
+
+from collections import deque 
+
 class Solution:
     
     #Function to return list containing vertices in Topological order.
     def topoSort(self, V, adj):
-        vis = [ 0 for _ in range(V) ]
-        stk = []
         
-        def dfs(n):
-            vis[n] = 1 
-            for nbr in adj[n]:
-                if vis[nbr] == 0: 
-                    dfs(nbr)
-            stk.append(n)
+        indegress = [ 0 for _ in range(V) ]
+        for v in range(V):
+            for n in adj[v]: 
+                indegress[n] += 1
+
+        dq = deque()
+        for v in range(V): 
+            if indegress[v] == 0:
+                dq.append(v)
+                
+        res = []
+        
+        while dq:
+            node = dq.pop()
+            res.append(node)
+            
+            for nbr in adj[node]:
+                indegress[nbr] -= 1 
+                if indegress[nbr] == 0: 
+                    dq.append(nbr)
+            
+        return res
+        # vis = [ 0 for _ in range(V) ]
+        # stk = []
+        
+        # def dfs(n):
+        #     vis[n] = 1 
+        #     for nbr in adj[n]:
+        #         if vis[nbr] == 0: 
+        #             dfs(nbr)
+        #     stk.append(n)
             
             
-        for n in range(V):
-            if vis[n] == 0: 
-                dfs(n)
-        return stk[::-1]
+        # for n in range(V):
+        #     if vis[n] == 0: 
+        #         dfs(n)
+        # return stk[::-1]
 
 
 
