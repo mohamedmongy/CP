@@ -10,7 +10,6 @@ class Solution:
         rgt = 1 
         
         while rgt <= n:
-            
             while currsum > s and lft < rgt-1:
                 currsum -= arr[lft]
                 lft += 1
