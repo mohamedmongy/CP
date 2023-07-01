@@ -18,6 +18,7 @@ class Solution:
             else:
                 if A[mid] < res:
                     residx = mid
+                    res = arr[mid]
                     break
                 r = mid - 1
         return residx
